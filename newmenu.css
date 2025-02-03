@@ -1,0 +1,149 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 30px;
+    position: sticky; 
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border: 3px solid rgb(255, 255, 255); 
+    color: black;
+    padding: 15px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', Geneva, sans-serif;
+}
+
+.food-container, .drink-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.food1, .food2, .drink1, .drink2 {
+    flex: 1;
+    max-width: 45%;
+}
+
+.food1 img, .drink2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.food2 img{
+    width: 103%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.drink1 img{
+    margin-bottom: 80px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.food1 img:hover, .food2 img:hover, .drink1 img:hover, .drink2 img:hover {
+    transform: scale(1.05);
+}
+
+.footerr {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    width: 30%;
+}
+
+.right-container {
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    gap: 10px;
+}
+
+.right-section {
+    width: 60%; 
+}
+
+.right-section02 {
+    width: 35%; 
+    font-family: 'Lucida Sans', Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .footerr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .right-section, .right-section02 {
+        width: 100%;
+    }
+}

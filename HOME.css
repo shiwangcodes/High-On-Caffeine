@@ -1,0 +1,266 @@
+html {
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 30px;
+    position: sticky; 
+    top: 0;
+    z-index: 999;
+    width: 100%;}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    
+}
+
+.logo {
+    text-align: center;
+}   
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    padding: 15px 30px; 
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px; 
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border: 3px solid rgb(255, 255, 255); 
+    color: black; 
+    transition: all 0.3s ease-in-out;
+    padding: 15px 10px; 
+    border-radius: 12px; 
+}
+
+.coffee {
+    position: absolute;
+    top: 10px; 
+    right: 80px; 
+}
+
+.coffee img {
+    width: 600px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.coffee-title {
+    position: absolute;
+    top: 120px; 
+    right: 1000px; 
+    font-size: 75px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cb9427; 
+}
+
+.coffee-subtext {
+    overflow: hidden;
+    position: absolute;
+    top: 300px; 
+    right: 710px;  
+    font-size: 27px; 
+    font-family: Arial, sans-serif;
+    color: #7b5a30; 
+    width: 100%;
+    line-height: 1.4;
+}
+
+.PastaImg {
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    width: 600px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pasta-title {
+    position: absolute;
+    top: 625px; 
+    right: 400px; 
+    font-size: 75px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cb9427; 
+}
+
+.pasta-subtext {
+    overflow: hidden;
+    position: absolute;
+    top: 800px; 
+    left: 930px;  
+    font-size: 27px; 
+    font-family: Arial, sans-serif;
+    color: #7b5a30; 
+    width: 100%;
+    line-height: 1.4;
+}
+
+.pizza {
+    position: absolute;
+    top: 1100px; 
+    right: 0px;
+}
+
+.PizzaImg{
+    width: 600px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pizza-title {
+    position: absolute;
+    top: 50px; 
+    right: 1140px; 
+    font-size: 75px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cb9427; 
+}
+
+.pizza-subtext {
+    overflow: hidden;
+    position: absolute;
+    top: 220px; 
+    right: 795px;  
+    font-size: 27px; 
+    font-family: Arial, sans-serif;
+    color: #7b5a30; 
+    width: 100%;
+    line-height: 1.4;
+}
+
+.SandwichImg {
+    position: absolute;
+    top: 1700px;
+    left: 0px;
+    width: 600px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sandwich-title {
+    position: absolute;
+    top: 1725px; 
+    right: 400px; 
+    font-size: 75px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cb9427; 
+}
+
+.sandwich-subtext {
+    overflow: hidden;
+    position: absolute;
+    top: 1900px; 
+    left: 790px;  
+    font-size: 27px; 
+    font-family: Arial, sans-serif;
+    color: #7b5a30; 
+    width: 100%;
+    line-height: 1.4;
+}
+
+.coffee img:hover, .pasta img:hover, .pizza img:hover, .sandwich img:hover {
+    transform: scale(1.05);
+}
+
+.footerr {
+    position: absolute;
+    top: 2500px;
+    background-color: black;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    padding: 0%;
+    margin-right: 0;
+    width: 30%;
+}
+
+.right-container {
+    margin-right: 150px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 55%;
+    gap: 10px;
+}
+.right-section {
+    
+    padding: 0%;
+    width: 60%; 
+}
+.right-section02 {
+   
+    padding: 0%;
+    width: 35%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    position: relative; /* Needed for pseudo-elements */
+    padding: 50px 0;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pseudo-elements for coffee beans background */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('beans.webp'); /* Path to your coffee bean image */
+    background-repeat: repeat; /* Repeat coffee beans across the entire section */
+    background-size: 100px 100px; /* Adjust size of coffee beans */
+    opacity: 0.1; /* Faint background to avoid overpowering the content */
+    z-index: -1; /* Ensure it stays behind the section content */
+}
+
+
+@media (max-width: 768px) {
+    .footerr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .right-section, .right-section02 {
+        width: 100%;
+    }
+}
+
